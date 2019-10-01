@@ -85,7 +85,7 @@
 
   //function to tell you who won
   function theWinner(home, away) {
-    if (home = away) {
+    if (home === away) {
     let tie = "The game is a tie"
       return tie; 
     }
@@ -93,12 +93,12 @@
     let winner = "The home team won"
       return winner; 
     }
-    else (home < away) {
+    else if (away > home) {
     let winner = "The away team won"
-      return "The away team won";
+      return winner;
     }
   }
-  console.log(theWinner(2,5));
+  console.log(theWinner(2,10));
 
 
   </script>
